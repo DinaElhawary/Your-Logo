@@ -1,0 +1,269 @@
+html, body {
+    font-family: "Open Sans";
+}
+body {
+    overflow-y: scroll;
+    list-style: none;
+}
+a {    
+    text-decoration: none;   
+}
+.container {
+    margin: auto;
+    width: 1140px;
+}
+/**============= Top Header ================**/
+.top-header {
+    background-color: #313234;
+    height: 65px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.left-box {
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    margin-top: -20px;
+}
+.right-box ul li {
+    float: right;
+    padding-top: 5px;
+    list-style: none;
+}
+.right-box li a {
+    color: #fff;
+    padding-top: 50px;
+    padding: 0px 25px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.right-box li a:hover {
+    color: #00c8e9;
+    transition: 0.5s;
+}
+/**============= /Top Header ===============**/
+/**==================Lap Photo===============**/
+main.lap-img img{
+    width: 100%;
+    background-size: cover;
+}
+/**==================/lap Photo=============**/
+/**==================The Slogan ============**/
+.right-title {
+    float: right;
+    background-color: #000;
+    padding: 25px 260px 15px 20px;
+    opacity: 0.5;
+    margin-top: -250px;
+}
+.right-title p {
+    opacity: 1;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+/**==================/The Slogan============**/
+/**=================Three Boxes=============**/
+.row {
+    display: flex;
+}
+.icon-box {
+    text-align: center;
+    margin-top: 110px;
+}
+.icon-box a {
+    background-color: #313231;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 40px;
+    padding: 10px ;
+}
+.icon-box h1 {
+    font-style: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.icon-box p {
+    line-height: 1.5;
+    color: #828282;
+}
+/**=================/Three Boxes============**/
+/**=================Feature Works ===========**/
+.center-title {
+    text-align: center;
+    margin-top: 90px;
+}
+.center-title h1{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+}
+.center-title p {
+    line-height: 1.5;
+    color: #828282;
+    font-style: 15px;
+    margin-bottom: 50px;
+}
+.feature-photo {
+    font-size: 0;
+}
+.feature-photo img {
+    width: 337px;
+    height: 300px;
+}
+/**=================/Feature Works ==========**/
+/**===============Four Ball==============**/
+.ball-photo ul li {
+    padding: 40px;
+    margin-bottom: 70px;
+    list-style: none;
+}
+.ball-photo ul  {
+    display: flex;
+    margin-top: 100px;
+    padding-left: 90px;
+}
+.ball-photo img {
+    border-radius: 50%;
+    padding-left: 20px;
+}
+.ball-photo p {
+    text-align: center;
+    color: #828282;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+/**=============/Four Ball==============**/
+/**================ipad-photo===========**/
+.gray-section {
+    background-color: #313234;
+    padding-top: 50px; 
+}
+.gray-section img {
+    float: left;
+    padding-left: 15px;
+    margin-top: 45px;
+}
+.gray-section::after{
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+.gray-p {
+    float: right;
+    padding-right: 100px;
+}
+.gray-p main {
+    display: flex;
+}
+.gray-p h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.gray-p main p {
+    color: #fff;
+    line-height: 1.5;
+    padding: 20px;
+    margin-top: -50px;
+}
+/**================/ipad-photo===========**/
+
+/**================Counter===============**/
+.parent-counter {
+    margin-top: 60px;
+    display: flex;
+    padding: 50px;
+}
+.counter {
+    padding: 50px;
+    text-align: center;
+}
+.counter h1 {
+    font-weight: bold;
+    font-size: 90px;
+}
+.counter h2 {
+    font-weight: bold;
+    font-style: 20px;
+    color: #00c8e9;
+}
+
+/**================/counter==============**/
+/**=================footrt===============**/
+.site-footer {
+    background-color: #313231;
+    padding: 25px;
+}
+footer {
+    display: flex;
+}
+.footers {
+    color: #ffffff;
+    padding: 30px;
+}
+.footers h1{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.footers p{
+     font-size: 15px;
+     line-height: 1;
+     margin-bottom: 25px;
+}
+.footers ul li{
+    display: inline;
+    padding: 5px;
+    margin-top: 20px;
+}
+.footers ul li a {
+    background-color: #00c8e9;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 5px #7b8586;
+}
+/**=================/footer==============**/
+/**===================Section Media Query===============**/
+@media (max-width: 1160px) {
+     main.lap-img {
+        width: 1700px;
+     }
+     .right-title {
+         
+     }
+     .gray-section {
+        width: 1700px;
+     }
+     .site-footer {
+        width: 1550px;
+     }
+    .parent-counter {
+        margin-left: 200px;
+    }
+    .ball-photo {
+        margin-left: 300px;
+    }
+    .row {
+        margin-left: 500px;
+    }
+    .icon-box {
+        padding: 50px;
+        
+    }
+ 
+}
+/**==================/Section Media Query===============**/
